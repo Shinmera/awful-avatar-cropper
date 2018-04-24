@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Awful Avatar Cropper</title>
+    <link rel="stylesheet" href="cropper.min.css" />
+    <link rel="stylesheet" href="avatar.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Awful Avatar Cropper</h1>
+      <div id="alert" class="alert" style="display:none"></div>
+      <noscript class="alert">JavaScript is required, sorry.</noscript>
+      <div id="input-wrapper">
+        <input id="file" type="file" />
+        <label class="button" for="file">Select File</label>
+      </div>
+      <div id="container">
+        <div id="image-wrapper">
+          <img id="image" src="default.jpg" />
+        </div>
+        <div id="preview-wrapper">
+          <div id="preview"></div>
+        </div>
+      </div>
+      <div id="download-wrapper">
+        <fieldset id="type">
+          <input type="radio" value="png" name="type" id="png" checked>
+          <label for="png">PNG</label>
+          <input type="radio" value="jpeg" name="type" id="jpg">
+          <label for="jpg">JPG</label>
+          <input type="radio" value="gif" name="type" id="gif">
+          <label for="gif">GIF</label>
+        </fieldset>
+        <a class="button" id="download" download="avatar.png">Download Avatar</a>
+      </div>
+    </main>
+    <script src="cropper.min.js"></script>
+    <script src="avatar.js"></script>
+  </body>
+</html>
