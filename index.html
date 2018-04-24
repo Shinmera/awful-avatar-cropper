@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Awful Avatar Cropper</title>
-    <link rel="stylesheet" href="cropper.min.css" />
+    <link rel="stylesheet" href="croppr.min.css" />
     <link rel="stylesheet" href="avatar.css" />
   </head>
   <body>
@@ -11,7 +11,7 @@
       <div id="alert" class="alert" style="display:none"></div>
       <noscript class="alert">JavaScript is required, sorry.</noscript>
       <div id="input-wrapper">
-        <input id="file" type="file" />
+        <input id="file" type="file" accept="image/x-png,image/gif,image/jpeg,image/svg+xml" />
         <label class="button" for="file">Select File</label>
       </div>
       <div id="container">
@@ -19,7 +19,7 @@
           <img id="image" src="default.jpg" />
         </div>
         <div id="preview-wrapper">
-          <div id="preview"></div>
+          <canvas id="preview"></canvas>
         </div>
       </div>
       <div id="download-wrapper">
@@ -34,7 +34,7 @@
         <a class="button" id="download" download="avatar.png">Download Avatar</a>
       </div>
     </main>
-    <script src="cropper.min.js"></script>
+    <script src="croppr.min.js"></script>
     <script src="avatar.js"></script>
   </body>
 </html>
